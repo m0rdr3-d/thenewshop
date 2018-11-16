@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 gem 'ruby-wallet', path: 'vendor/ruby-wallet'
+gem 'mongoid'
 gem 'moped'
 gem 'origin'
 # Use Puma as the app server
