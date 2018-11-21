@@ -11,6 +11,7 @@ gem 'block_io'
 gem 'cloudinary'
 gem 'carrierwave'
 gem 'devise'
+gem 'ahoy_matey'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

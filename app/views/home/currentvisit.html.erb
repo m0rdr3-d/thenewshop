@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Bonbagay</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="home/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="home/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+        <h1>Visitors</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>IP Address</th>
+                    <th>User Agent</th>
+                    <th>Browser</th>
+                    <th>OS</th>
+                    <th>Date Visited</th>
+                    <th>Landing Page</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% @visits.each do |user| %>
+                    <tr>
+                        <td>
+                            <%= user.ip %>
+                        </td>
+                        <td>
+                            <%= user.user_agent %>
+                        </td>
+                        <td>
+                            <%= user.browser %>
+                        </td>
+                        <td>
+                            <%= user.os %>
+                        </td>
+                        <td>
+                            <%= user.started_at %>
+                        </td>
+                        <td>
+                            <%= user.landing_page %>
+                        </td>
+
+
+                    </tr>
+                    <% end %>
+            </tbody>
+        </table>
+
+        <br>
+
+    </div>
+
+    <div id="wrapper" class="divided">
+        <h1>Estimated Number</h1>
+        <h2>
+            <%= @visits.count %>
+        </h2>
+    </div>
+</body>
+
+</html>
