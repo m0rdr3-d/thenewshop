@@ -7,10 +7,10 @@ ruby '2.4.4'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-gem 'ruby-wallet', path: 'vendor/ruby-wallet'
-gem 'mongoid'
-gem 'moped'
-gem 'origin'
+gem 'block_io'
+gem 'cloudinary'
+gem 'carrierwave'
+gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

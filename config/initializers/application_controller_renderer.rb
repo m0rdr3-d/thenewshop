@@ -6,3 +6,6 @@
 #     https: false
 #   )
 # end
+
+require 'block_io'
+BlockIo.set_options :api_key=> '85bf-a839-d4d6-58be', :pin => '781227781228', :version => 2
