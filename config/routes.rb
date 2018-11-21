@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/lowbtc' => "home#lowbtc"
   get '/error' => "home#error"
   get '/success' => "home#success"
-  get '/withdraw' => "homewithdraw"
+  get '/withdraw' => "home#withdraw"
   get '/currentvisit' => "home#currentvisit"
   root 'home#index' 
 end
