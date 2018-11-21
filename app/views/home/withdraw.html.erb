@@ -77,12 +77,12 @@
 	<div class="container">
 		<div class="all-require">
 		
-				<div class="heading">
+				<!-- <div class="heading">
                      <h4><%=current_user.username%><h3><b> </b></h3> </h4>
                     <h3>Your Approved balance is<span> <%=b['data']['balances'][0]['available_balance']+'BTC'%></span> </h3>
                     <h4>Your wallet address is<h3><b> <%=current_user.address%></b></h3> </h4>
                     <h4>Pending Balance:<h3><b> <%=b['data']['balances'][0]['pending_received_balance']+'BTC'%></b></h3> </h4>
-				</div>
+				</div> -->
 		
 				<div class="specification" >
 		
@@ -95,8 +95,12 @@
 					<div class="col-md-4 require-size">
 						<div class="grid">
 							
-							<p> <span>To fund your account, send the required amount of BTC to your wallet address</span> shown above </p>
-							<p><span>If you are unsure of how to buy or use BTC, you should not be here</span> however, we have created a simple guide for you, click on 'FAQ' on the top right corner of this page </p><br>
+							<p>Enter the amount and address you want to withdraw to <span> <div class="form-group">
+                                <input type="text" style="width:28%;" class="form-control simplebox" id="password" placeholder="Address">
+                                <input type="text" style="width:28%;" class="form-control simplebox" id="password" placeholder="Amount">
+                                <%= link_to 'Withdraw', lowbtc_path %>
+                            </div></span></p>
+							<p><span></p><br>
 							<br>
 							<!-- <br>
 							<i class="pc"> </i>
