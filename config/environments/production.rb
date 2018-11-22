@@ -92,7 +92,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   
-  cloud_name: "dsegcukxy"
-  api_key: "123837668317786"
-  api_secret: "8E7ARHlp1ZK2ObBpB5dNtgDUKJQ"
+  
 end
