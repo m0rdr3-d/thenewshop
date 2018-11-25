@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
     def index
         @products = Product.all
+        @btc_price_table = Cryptocompare::Price.find('USD', 'BTC')
+        @btc_price = @btc_price_table["USD"]["BTC"]
     end
 
     def currentvisit

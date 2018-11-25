@@ -99,6 +99,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.3)
     crass (1.0.4)
+    cryptocompare (0.14.0)
+      faraday
+      json
     device_detector (1.0.1)
     devise (4.5.0)
       bcrypt (~> 3.0)
@@ -113,6 +116,8 @@ GEM
     errbase (0.1.1)
     erubi (1.7.1)
     execjs (2.7.0)
+    faraday (0.15.3)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.25-x64-mingw32)
     geocoder (1.5.0)
     globalid (0.4.1)
@@ -126,6 +131,7 @@ GEM
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    json (2.1.0)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -143,6 +149,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.4-x64-mingw32)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     netrc (0.11.0)
     nio4r (2.3.1)
     nokogiri (1.8.5-x64-mingw32)
@@ -262,6 +269,7 @@ DEPENDENCIES
   chromedriver-helper
   cloudinary
   coffee-rails (~> 4.2)
+  cryptocompare
   devise
   duktape
   jbuilder (~> 2.5)
