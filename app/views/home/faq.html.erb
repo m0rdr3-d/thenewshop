@@ -60,7 +60,7 @@
 						
                             <ul class="nav navbar-nav navbar-right">
                                     <%b = BlockIo.get_address_balance :labels => current_user.username%>
-                                    <li><%= link_to current_user.username, destroy_user_session_path, method: :delete %></li>
+                                    <li><%= link_to current_user.username, wallet_path %></li>
                                     <li><%= link_to  b['data']['balances'][0]['available_balance']+'BTC', wallet_path %></li>
                                     <li><%= link_to 'FAQ', faq_path %></li>
                                     <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
@@ -113,8 +113,7 @@
 							<p> Yes, just go to the withdraw page on the top right corner of this page
                                 <span>Enter the address you need to withdraw to and click 'Done'</span>  </p>
                             
-                            <p> Can I cancel my order?</p>
-							<p> Your BTC typically stays in your wallet for up to 24 hours before its withdrawn for payment 
+                           
 						</div>
 					</div>
 			
