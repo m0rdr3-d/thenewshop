@@ -101,7 +101,7 @@
 				</div>
 				<h5><%=product.name%></h5>
 				<%price = @btc_price * product.price %>
-				<h5>BTC<%=price%></h5>
+				<h5>BTC<%=number_with_precision(price, precision: 4)%></h5>
 				<p><%=product.description%></p>
 				<%if b['data']['balances'][0]['available_balance'] == "0.00000000" %>
 					<h5><%= link_to "Buy Now", lowbtc_path %></h5>
