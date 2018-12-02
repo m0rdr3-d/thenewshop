@@ -49,7 +49,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-                            <a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">FIRST SHOP
+                            <a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">THE CORNER SHOP
 									
                                 </a>
 						</div>
@@ -79,19 +79,20 @@
 		<div class="all-require">
 		
 				<div class="heading">
-                     <h4><%=current_user.username%><h3><b> </b></h3> </h4>
-                    <h3>Your Approved balance is<span> <%=b['data']['balances'][0]['available_balance']+'BTC'%></span> </h3>
-                    <h4>Your wallet address is<h3><b> <%=current_user.address%></b></h3> </h4>
-                    <h4>Pending Balance:<h3><b> <%=b['data']['balances'][0]['pending_received_balance']+'BTC'%></b></h3> </h4>
+                     <h4 style="color:black;"><%=current_user.username%><h3><b> </b></h3> </h4>
+					<h3 style="color:black;">Your Approved balance is<span> <%=b['data']['balances'][0]['available_balance']+'BTC'%></span> </h3>
+					<%puts b%>
+                    <h4 style="color:black;">Your wallet address is <h3><%=b['data']['balances'][0]['address']%></h3> </h4>
+                    <h4 style="color:black;">Pending Balance:<h3 style="color:black;"><b> <%=b['data']['balances'][0]['pending_received_balance']+'BTC'%></b></h3> </h4>
 				</div>
 		
 				<div class="specification" >
 		
 		<div class="col-md-4 require-size">
-						<div class="button-grid">
+				<div class="button-grid">
 							
-						</div>
-					</div>
+				</div>
+		</div>
 
 					<div class="col-md-4 require-size">
 						<div class="grid">

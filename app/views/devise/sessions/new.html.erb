@@ -49,7 +49,7 @@
 								<span class="icon-bar"></span>
 							</button>
                <!-- <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt="logo"></a> -->
-               <a class="navbar-brand" rel="home" href="#" style="font-family: 'BlackOpsOne-Regular';color:#fff;">FIRST SHOP
+               <a class="navbar-brand" rel="home" href="#" style="font-family: 'BlackOpsOne-Regular';color:#fff;">THE CORNER SHOP
 									
                 </a>
 						</div>
@@ -73,63 +73,46 @@
 </div> <!-- Header Ends -->
 
 <div class="requirement" id="requirements"> <!-- Requirements Starts   -->
+	<div class="banner">
 	<div class="container">
 		<div class="all-require">
 		
-				<div class="heading">
-					<h3>Log<span>  In</span> </h3>
+				<div class="heading" style="margin-top:7%;z-index: 100000;">
+					
 				</div>
 		
 				<div class="specification" >
 		
-		<div class="col-md-4 require-size">
-						<div class="button-grid">
-							
-						</div>
-					</div>
-
 					<div class="col-md-4 require-size">
-						<div class="grid">
-							
-
-<div class="container">
-
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  
-  <div class="formHolder signup">
-
-    <div class="form-group" >
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control simplebox", id: "login", placeholder: "Email", style: 'width: 28%; margin-top: 5%;' %>
-    </div>
-      
-    <div class="form-group">
-        <%= f.password_field :password, autocomplete: "current-password", class: "form-control simplebox", id: "password", placeholder: "Password", style: 'width: 28%;' %>
-    </div>
-
-    <div class="form-group">
-        <%= f.submit "Log in", class: "form-control simplebox", id: "signup", style: 'width:28%; margin-top: 3%; background: #f7de29;' %>
-    </div>
-    
-  </div>
-  <%end%>
-  
-</div>
-
-
-
-						</div>
-					</div>
-			
-			
+									<div class="button-grid">
 									</div>
-					</div>
+								</div>
+								<div class="col-md-4 require-size">
+									<div class="grid" style="margin-top:-30%;text-align: center; width:100%;">
+										<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+										<div class="formHolder signup" style="margin-top:0%;width: 100%;">
 
-					
-					
-				  <div class="clearfix"> </div>
+											<div class="form-group" style="color:black;margin-left: 5%; margin-right: 5%;" >
+												<%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control simplebox", id: "login", placeholder: "Email", style: 'width:100%; margin-top: 5%;' %>
+											</div>
+											
+											<div class="form-group" style="color:black;margin-left: 5%; margin-right: 5%;">
+												<%= f.password_field :password, autocomplete: "current-password", class: "form-control simplebox", id: "password", placeholder: "Password", style: 'width: 100%;' %>
+											</div>
+
+											<div class="form-group" style="color:black;margin-left: 5%; margin-right: 5%;">
+												<%= f.submit "Log in", class: "form-control simplebox", id: "signup", style: 'width:100%;font-size:20px; text-align:center;margin-top: 3%; background: #f7de29;border: none;color: white;border-color:#f7de29;' %>
+											</div>
+										</div>
+										<%end%>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="clearfix"> </div>
 				</div>	<!-- Specification Ends here   -->
+			</div>
 		</div>
-	  </div>
 	</div> <!-- requirement Ends -->
 
 

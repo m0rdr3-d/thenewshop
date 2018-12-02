@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get '/success' => "home#success"
   get '/withdraw' => "home#withdraw"
   get '/currentvisit' => "home#currentvisit"
+  get '/contact' => "home#contact"
   root 'home#index' 
 end

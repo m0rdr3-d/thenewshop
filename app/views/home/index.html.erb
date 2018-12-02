@@ -50,10 +50,10 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-						   <!-- <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt="logo"></a> -->
+						   <!-- <a class="navbar-brand" href="/"><img src="./images/logo2.png" alt="logo"></a> -->
 						  
 							<!-- <h1 style="font-family: 'BlackOpsOne-Regular';color:#fff;text-align: center;">FIRST SHOP</h1> -->
-							<a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">FIRST SHOP
+							<a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">THE SHOP
 									
 							</a>
 							 
@@ -65,9 +65,12 @@
 						
 						<ul class="nav navbar-nav navbar-right">
 							<% b = BlockIo.get_address_balance :labels => current_user.username%>
-							<li><%= link_to current_user.username, wallet_path %></li>
+							<li><%= link_to 'Homepage', root_path %></li>
+							<li><%= link_to 'Products', root_path %></li>
+							<li><%= link_to 'Deposit Funds', wallet_path %></li>
 							<li><%= link_to b['data']['balances'][0]['available_balance']+'BTC', wallet_path %></li>
 							<li><%= link_to 'FAQ', faq_path %></li>
+							<li><%= link_to 'Contact us', contact_path %></li>
 							<li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
 						</ul>
 
@@ -87,7 +90,7 @@
 <div class="about" id="about">	
 	<div class="container">
 	  
-		<h3> Welcome to <span>The First Shop</span> </h3>
+		<h3> Welcome to <span>The Shop</span> </h3>
 		<h4>Start Shopping below
 		</h4>
 		
@@ -101,9 +104,9 @@
 				</div>
 				<h5><%=product.name%></h5>
 				<%price = @btc_price * product.price %>
-				<h5><%=number_with_precision(price, precision: 4)%>BTC</h5>
-				<p><%=product.description%></p>
-				<%if b['data']['balances'][0]['available_balance'] == "0.00000000" %>
+				<h5><%=number_with_precision(price, precision: 8)%>BTC/<span>&#163;</span> <%=product.price%></h5>
+				<!-- <p><%=product.description%></p> -->
+				<%if b['data']['balances'][0]['available_balance'] < number_with_precision(price, precision: 8) %>
 					<h5><%= link_to "Buy Now", lowbtc_path %></h5>
 				<%else%>
 					<h5><%= link_to "Buy Now", product %></h5>
@@ -143,7 +146,7 @@
 	</div> <!-- requirement Ends -->
 
 
-<div class="upcoming" id="games">
+<!-- <div class="upcoming" id="games">
 	<div class="container">
 		<div class="padding-upcoming">
 			
@@ -227,7 +230,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 
@@ -322,7 +325,7 @@
 								   <!-- <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt="logo"></a> -->
 								  
 									<!-- <h1 style="font-family: 'BlackOpsOne-Regular';color:#fff;text-align: center;">FIRST SHOP</h1> -->
-									<a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">FIRST SHOP
+									<a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">THE SHOP
 											
 									</a>
 									 
@@ -349,21 +352,23 @@
 						
 				<div class="banner" id="home">
 					<div class="container">
-						<div class="banner-content">
-							<h1>FIRST SHOP</H1>
-							<h2>Black Market for Firearms </h2>
-							<p>Your privacy is the most important thing.</p>
-							<h2>Log in or Sign up to access the market.</h2>
+						<div class="banner-content" style="">
+							<div class="grid" style="width:100%;height: 100%;padding-left: 10%;margin-right: 10%;">
+								<h1>THE CORNER SHOP</H1>
+								<h2></h2>
+								<h3><span>Your privacy is most important to us.</span></h3>
+								<h2>Log in or Sign up to access the market.</h2>
+							</div>
 						</div>
 					</div>
 				</div> <!-- Banner Ends Here -->
 		</div> <!-- Header Ends -->
 
-		<div class="upcoming" id="games">
+		<!-- <div class="upcoming" id="games">
 				<div class="container">
 					<div class="padding-upcoming">
 						
-						<h3> <span>  Clips</span> </h3>
+						<h3> <span>Clips</span> </h3>
 							
 						<div class="background shadow1">
 			
@@ -443,7 +448,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 </body>
 
 <%end%>
