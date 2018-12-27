@@ -1,0 +1,2 @@
+module CocainesHelper
+end

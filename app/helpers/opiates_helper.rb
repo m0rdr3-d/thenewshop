@@ -1,0 +1,2 @@
+module OpiatesHelper
+end

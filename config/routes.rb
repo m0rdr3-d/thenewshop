@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  resources :orders
+  resources :miscs
+  resources :mdmas
+  resources :lsds
+  resources :cocaines
+  resources :cannabis
+  resources :synth_cannabinoids
+  resources :opiates
   resources :products
   devise_for :users,
     :controllers => {

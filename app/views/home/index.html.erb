@@ -52,7 +52,7 @@
 							</button>
 						   <!-- <a class="navbar-brand" href="/"><img src="./images/logo2.png" alt="logo"></a> -->
 						  
-							<!-- <h1 style="font-family: 'BlackOpsOne-Regular';color:#fff;text-align: center;">FIRST SHOP</h1> -->
+							<!-- <h1 style="font-family: 'BlackOpsOne-Regular';color:#fff;text-align: center;">THE CORNER SHOP</h1> -->
 							<a class="navbar-brand" rel="home" href="/" style="font-family: 'BlackOpsOne-Regular';color:#fff;">THE SHOP
 									
 							</a>
@@ -90,30 +90,19 @@
 <div class="about" id="about">	
 	<div class="container">
 	  
-		<h3> Welcome to <span>The Shop</span> </h3>
+		<h3> Welcome to <span>The Corner Shop</span> </h3>
 		<h4>Start Shopping below
 		</h4>
 		
 		<div class="about-image">
 
-		<% @products.each do |product| %>
-			
-			<div class="col-md-4 about-size">
-				<div class="shadow">
-					<img src=<%=product.image%> alt="image">
-				</div>
-				<h5><%=product.name%></h5>
-				<%price = @btc_price * product.price %>
-				<h5><%=number_with_precision(price, precision: 8)%>BTC/<span>&#163;</span> <%=product.price%></h5>
-				<!-- <p><%=product.description%></p> -->
-				<%if b['data']['balances'][0]['available_balance'] < number_with_precision(price, precision: 8) %>
-					<h5><%= link_to "Buy Now", lowbtc_path %></h5>
-				<%else%>
-					<h5><%= link_to "Buy Now", product %></h5>
-				<%end%>
-			
-			</div>
-		<% end %>
+			<li><%= link_to 'Opiates', opiates_path %></li>
+			<li><%= link_to 'Synthetic Cannabinoids', synth_cannabinoids_path %></li>
+			<li><%= link_to 'Cannabis', cannabis_path %></li>
+			<li><%= link_to 'Cocaine', cocaines_path %></li>
+			<li><%= link_to 'LSD', lsds_path %></li>
+			<li><%= link_to 'MDMA', mdmas_path %></li>
+			<li><%= link_to 'Misc', miscs_path %></li>
 		
 			
 			<!-- <div class="col-md-4 about-size">
@@ -126,7 +115,7 @@
 			
 			</div>
 			
-			<div class="col-md-4 about-size">
+			<div clas	s="col-md-4 about-size">
 				<div class="shadow">
 					<img src="./images/ai3.jpg" alt="image">
 				</div>
@@ -138,7 +127,7 @@
 		  <div class="clearfix"> </div>
 		</div>  <!-- About-image Ends  -->
 		
-	</div> <!-- Container ends -->	
+	</div> <!-- Container ends -->
 </div> <!-- About Ends -->
 
 
