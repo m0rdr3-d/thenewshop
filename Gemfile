@@ -11,6 +11,7 @@ gem "capistrano3-puma"
 gem "capistrano-rails", require: false
 gem "capistrano-bundler", require: false
 gem "capistrano-rbenv"
+gem 'pg'
 gem 'sqlite3'
 gem 'block_io'
 gem 'cloudinary'

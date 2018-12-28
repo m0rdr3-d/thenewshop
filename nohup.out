@@ -1,0 +1,347 @@
+=> Booting Puma
+=> Rails 5.2.1 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.0 (ruby 2.4.4-p296), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 197.210.44.122 at 2018-12-27 13:17:21 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 3503ms (Views: 3316.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 197.210.44.122 at 2018-12-27 13:17:45 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 197.210.44.122 at 2018-12-27 13:17:47 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (36.3ms)
+Completed 200 OK in 236ms (Views: 223.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 197.210.44.122 at 2018-12-27 13:21:28 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 150ms (Views: 106.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 197.210.44.122 at 2018-12-27 13:22:22 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 197.210.44.122 at 2018-12-27 13:22:23 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (17.1ms)
+Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 197.210.44.122 at 2018-12-27 13:25:42 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (0.8ms)
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (14.9ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 197.210.44.122 at 2018-12-27 13:26:09 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4nOaF1AdVGPcvdFOkgpeDMGbYe+0brWLbLlohf1SVraezcTaEGhd6SXldoYR9Zt8GjMBAGsvxwG1zivf2nfVVQ==", "admin_user"=>{"email"=>"america123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "america123@gmail.com"], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://l3ehhmxholdxcvtq.onion/admin
+Completed 302 Found in 162ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 197.210.44.122 at 2018-12-27 13:26:10 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb (102.7ms)
+Completed 200 OK in 111ms (Views: 104.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 197.210.44.122 at 2018-12-27 13:46:15 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb (69.3ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 196.52.43.127 at 2018-12-27 13:55:32 -0500
+Cannot render console from 196.52.43.127! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as */*
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 150ms (Views: 102.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 197.210.44.122 at 2018-12-27 14:09:18 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 89.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 197.210.44.122 at 2018-12-27 14:24:09 -0500
+Cannot render console from 197.210.44.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 159ms (Views: 97.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 197.210.53.234 at 2018-12-27 15:02:34 -0500
+Cannot render console from 197.210.53.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/login" for 197.210.53.234 at 2018-12-27 15:02:35 -0500
+Cannot render console from 197.210.53.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (24.4ms)
+Completed 200 OK in 95ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 197.210.53.217 at 2018-12-27 15:45:45 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 137ms (Views: 99.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 197.210.53.239 at 2018-12-27 15:48:35 -0500
+Cannot render console from 197.210.53.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 181ms (Views: 114.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 197.210.53.217 at 2018-12-27 15:51:01 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 107ms (Views: 94.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/.../js/jquery.min.js" for 197.210.53.217 at 2018-12-27 15:51:03 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/.../js/jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+ahoy_matey (2.1.0) lib/ahoy/engine.rb:20:in `call_with_quiet_ahoy'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/users/sign_in" for 197.210.53.239 at 2018-12-27 15:51:46 -0500
+Cannot render console from 197.210.53.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PpNQ/w3t9aYFNy0JjlO+NohXFx1Yp/wOuC4Q4yx2hxDs9J1fW3MJ5rHcBk3Ns1Zm/vZL68Y6UFEGa5DQvvp/Tg==", "user"=>{"email"=>"america123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "america123@gmail.com"], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 125ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PpNQ/w3t9aYFNy0JjlO+NohXFx1Yp/wOuC4Q4yx2hxDs9J1fW3MJ5rHcBk3Ns1Zm/vZL68Y6UFEGa5DQvvp/Tg==", "user"=>{"email"=>"america123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 214ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/.../js/jquery.min.js" for 197.210.53.217 at 2018-12-27 15:51:49 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/.../js/jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+ahoy_matey (2.1.0) lib/ahoy/engine.rb:20:in `call_with_quiet_ahoy'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/users/sign_in" for 197.210.53.217 at 2018-12-27 15:52:23 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p94RiSCdeptDL11Tmqb0STX3u/xbwLJU6463B6f2kBJ1udwpdgOG2/fEdhfZRhwZQ1bnCsVdHgtVyzc0NXpoTA==", "user"=>{"email"=>"america123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "america123@gmail.com"], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 120ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p94RiSCdeptDL11Tmqb0STX3u/xbwLJU6463B6f2kBJ1udwpdgOG2/fEdhfZRhwZQ1bnCsVdHgtVyzc0NXpoTA==", "user"=>{"email"=>"america123@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 215ms (Views: 94.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/.../js/jquery.min.js" for 197.210.53.217 at 2018-12-27 15:52:25 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/.../js/jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+ahoy_matey (2.1.0) lib/ahoy/engine.rb:20:in `call_with_quiet_ahoy'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/admin" for 197.210.53.217 at 2018-12-27 15:55:05 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/login" for 197.210.53.239 at 2018-12-27 15:55:07 -0500
+Cannot render console from 197.210.53.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (15.8ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 197.210.53.217 at 2018-12-27 15:56:54 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cKvvelfGMIg7zNg21dxLqVYHy2YWQidFUA32xJf6QQQBGxlgRxtKYq0BQZZx08aJGKgQAW6fe9p7vb0XWrYR5g==", "admin_user"=>{"email"=>"america123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "america123@gmail.com"], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://l3ehhmxholdxcvtq.onion/admin
+Completed 302 Found in 126ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 197.210.53.217 at 2018-12-27 15:56:56 -0500
+Cannot render console from 197.210.53.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb (76.9ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 197.210.52.227 at 2018-12-27 15:59:52 -0500
+Cannot render console from 197.210.52.227! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/login" for 197.210.53.241 at 2018-12-27 15:59:54 -0500
+Cannot render console from 197.210.53.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /root/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (14.4ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2018-12-27 16:01:40 -0500 ===
+- Goodbye!
+Exiting
