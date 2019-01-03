@@ -1,0 +1,23 @@
+
+module mynginx 1.0;
+
+require {
+	type unconfined_t;
+	type httpd_t;
+	type usr_t;
+	class sock_file write;
+	class unix_stream_socket connectto;
+	class capability2 block_suspend;
+}
+
+#============= httpd_t ==============
+
+#!!!! This avc is allowed in the current policy
+allow httpd_t self:capability2 block_suspend;
+
+#!!!! The file '/usr/local/thecornershop/shared/tmp/sockets/puma.sock' is mislabeled on your system.  
+#!!!! Fix with $ restorecon -R -v /usr/local/thecornershop/shared/tmp/sockets/puma.sock
+allow httpd_t unconfined_t:unix_stream_socket connectto;
+
+#!!!! This avc is allowed in the current policy
+allow httpd_t usr_t:sock_file write;
