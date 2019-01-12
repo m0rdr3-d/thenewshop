@@ -11,12 +11,18 @@
 	<!--//for-mobile-apps-->
 	
 	<!-- Custom-Theme-Files -->
-    <!-- Bootstrap-CSS --> 			<link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- JQuery --> 				<script src="js/jquery.min.js">			</script>
+	<!-- Bootstrap-CSS --> 			<link rel="stylesheet" href="css/bootstrap.min.css">
+	<%asset_url("stylesheets/bootstrap.min.js", stylesheet)%>
+	
+	<!-- JQuery --> 				<script src="js/jquery.min.js">			</script>
+	<%asset_url("javascripts/jquery.min.js", javascript)%>
+	<%asset_url("javascripts/bootstrap.min.js", javascript)%>
+	<%asset_url("stylesheets/style.css", stylesheet)%>
     <!-- Bootstrap-Main --> 		<script src="js/bootstrap.min.js">		</script>
     <!-- Index-Page-Styling --> 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <!-- Start-Smooth-Scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
+<%asset_url("stylesheets/bootstrap.min.js", stylesheet)%>
 <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
