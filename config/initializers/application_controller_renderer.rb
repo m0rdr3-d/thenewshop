@@ -8,4 +8,4 @@
 # end
 
 require 'block_io'
-BlockIo.set_options :api_key=> '85bf-a839-d4d6-58be', :pin => '123456789', :version => 2
+BlockIo.set_options :api_key=> '19fc-eb28-8733-21e5', :pin => 'Pakistan1234K', :version => 2
